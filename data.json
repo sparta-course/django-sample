@@ -1,0 +1,253 @@
+[
+{
+    "model": "product.category",
+    "pk": 1,
+    "fields": {
+        "name": "전자제품"
+    }
+},
+{
+    "model": "product.category",
+    "pk": 2,
+    "fields": {
+        "name": "식품"
+    }
+},
+{
+    "model": "product.category",
+    "pk": 3,
+    "fields": {
+        "name": "의류"
+    }
+},
+{
+    "model": "product.productoption",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "name": "흰색",
+        "price": 10000
+    }
+},
+{
+    "model": "product.productoption",
+    "pk": 2,
+    "fields": {
+        "product": 1,
+        "name": "검정색",
+        "price": 20000
+    }
+},
+{
+    "model": "product.productoption",
+    "pk": 3,
+    "fields": {
+        "product": 1,
+        "name": "파란색",
+        "price": 30000
+    }
+},
+{
+    "model": "user.user",
+    "fields": {
+        "last_login": null,
+        "username": "user",
+        "email": "user@email.com",
+        "password": "P@ssw0rd",
+        "fullname": "user's name",
+        "phone": "01012341234",
+        "is_active": true,
+        "is_admin": false,
+        "like": []
+    }
+},
+{
+    "model": "user.user",
+    "fields": {
+        "last_login": null,
+        "username": "user2",
+        "email": "user2@email.com",
+        "password": "pbkdf2_sha256$320000$TI7STVJio3xX8grkTclyiH$lZGGYTBUf1FFIYa3TaPplPwm3H0ewAX8iDB8eFNB7C0=",
+        "fullname": "user's name",
+        "phone": "01012341234",
+        "is_active": true,
+        "is_admin": false,
+        "like": []
+    }
+},
+{
+    "model": "user.user",
+    "fields": {
+        "last_login": "2022-06-22T01:38:58.025Z",
+        "username": "user3",
+        "email": "user3@email.com",
+        "password": "pbkdf2_sha256$320000$zn2u7204IDSG1lyw8FciRD$9O0Ruzgd6N7pdxjGl7mH/eDrbZY2+/v7NAQkh2eIGzY=",
+        "fullname": "user's name",
+        "phone": "01012341234",
+        "is_active": true,
+        "is_admin": false,
+        "like": []
+    }
+},
+{
+    "model": "user.user",
+    "fields": {
+        "last_login": "2022-06-22T00:59:55.312Z",
+        "username": "admin",
+        "email": "",
+        "password": "pbkdf2_sha256$320000$X6OC9hqfNFTA0xtJal3fQa$zxWbp7I49DSDigVVOOD2p0UuuizUzWL53/4fA6IlkE8=",
+        "fullname": "",
+        "phone": "",
+        "is_active": true,
+        "is_admin": true,
+        "like": []
+    }
+},
+{
+    "model": "user.cart",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "product_option": 1,
+        "count": 3
+    }
+},
+{
+    "model": "user.cart",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "product_option": 1,
+        "count": 3
+    }
+},
+{
+    "model": "user.cart",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "product_option": 1,
+        "count": 3
+    }
+},
+{
+    "model": "product.review",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "user": [
+            "user3"
+        ],
+        "rating": 5,
+        "content": "리뷰입니다!!",
+        "created": "2022-06-22T02:09:44.156Z"
+    }
+},
+{
+    "model": "product.review",
+    "pk": 2,
+    "fields": {
+        "product": 1,
+        "user": [
+            "user3"
+        ],
+        "rating": 5,
+        "content": "리뷰입니다2!!",
+        "created": "2022-06-22T02:10:02.744Z"
+    }
+},
+{
+    "model": "product.review",
+    "pk": 3,
+    "fields": {
+        "product": 1,
+        "user": [
+            "user3"
+        ],
+        "rating": 5,
+        "content": "리뷰입니다2!!",
+        "created": "2022-06-22T02:12:51.790Z"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "thumbnail": "product/thumnail/image1.jpg",
+        "detail": "product/detail/image2.jpg",
+        "category": 3,
+        "title": "수정된 상품 이름입니다.",
+        "description": "상품 설명입니다.",
+        "created": "2022-06-22T01:48:16.872Z"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "thumbnail": "product/thumnail/image1_twJlMHO.jpg",
+        "detail": "product/detail/image2_fbTXSuw.jpg",
+        "category": 1,
+        "title": "상품 이름입니다.",
+        "description": "상품 설명입니다.",
+        "created": "2022-06-22T01:54:58.714Z"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "thumbnail": "product/thumnail/image1_LAQY96f.jpg",
+        "detail": "product/detail/image2_AyrA7mh.jpg",
+        "category": 1,
+        "title": "상품 이름입니다.",
+        "description": "상품 설명입니다.",
+        "created": "2022-06-22T01:54:59.235Z"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "thumbnail": "product/thumnail/image1_CasVrOn.jpg",
+        "detail": "product/detail/image2_cR86pKw.jpg",
+        "category": 2,
+        "title": "상품 이름입니다.",
+        "description": "상품 설명입니다.",
+        "created": "2022-06-22T01:54:59.998Z"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "user3"
+        ],
+        "thumbnail": "product/thumnail/image1_PJescJD.jpg",
+        "detail": "product/detail/image2_yHV9FRO.jpg",
+        "category": 3,
+        "title": "상품 이름입니다.",
+        "description": "상품 설명입니다.",
+        "created": "2022-06-22T01:55:00.461Z"
+    }
+}
+]
